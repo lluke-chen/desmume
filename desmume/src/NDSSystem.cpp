@@ -722,7 +722,7 @@ int NDS_LoadROM(const char *filename, const char *physicalName, const char *logi
 		memset(buf, 0, MAX_PATH);
 		// path.getpathnoext(path.CHEATS, buf);
 		strncpy(buf, path.getpath(path.CHEATS).c_str(), MAX_PATH);
-		strcat(buf, "main.dct");						// DeSmuME cheat		:)
+		strcat(buf, "global.dct");						// DeSmuME cheat		:)
 		cheats->init(buf);
 	}
 
